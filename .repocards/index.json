@@ -1,0 +1,640 @@
+{
+  "program": [
+    {
+      "file": "src/cli.ts",
+      "line": 9,
+      "kind": "const",
+      "exported": false
+    }
+  ],
+  "skill": [
+    {
+      "file": "src/cli.ts",
+      "line": 37,
+      "kind": "const",
+      "exported": false
+    }
+  ],
+  "LANG_BY_EXT": [
+    {
+      "file": "src/discover.ts",
+      "line": 7,
+      "kind": "const",
+      "exported": false
+    }
+  ],
+  "BASE_IGNORES": [
+    {
+      "file": "src/discover.ts",
+      "line": 20,
+      "kind": "const",
+      "exported": false
+    }
+  ],
+  "discoverFiles": [
+    {
+      "file": "src/discover.ts",
+      "line": 43,
+      "kind": "function",
+      "exported": true
+    }
+  ],
+  "main": [
+    {
+      "file": "src/installer.ts",
+      "line": 4,
+      "kind": "function",
+      "exported": false
+    }
+  ],
+  "Lang": [
+    {
+      "file": "src/types.ts",
+      "line": 1,
+      "kind": "type",
+      "exported": true
+    }
+  ],
+  "SymbolKind": [
+    {
+      "file": "src/types.ts",
+      "line": 3,
+      "kind": "type",
+      "exported": true
+    }
+  ],
+  "CkSymbol": [
+    {
+      "file": "src/types.ts",
+      "line": 12,
+      "kind": "interface",
+      "exported": true
+    }
+  ],
+  "ImportEdge": [
+    {
+      "file": "src/types.ts",
+      "line": 23,
+      "kind": "interface",
+      "exported": true
+    }
+  ],
+  "FileNode": [
+    {
+      "file": "src/types.ts",
+      "line": 31,
+      "kind": "interface",
+      "exported": true
+    }
+  ],
+  "Graph": [
+    {
+      "file": "src/types.ts",
+      "line": 42,
+      "kind": "interface",
+      "exported": true
+    }
+  ],
+  "PackageMeta": [
+    {
+      "file": "src/types.ts",
+      "line": 48,
+      "kind": "interface",
+      "exported": true
+    }
+  ],
+  "DerivedViews": [
+    {
+      "file": "src/types.ts",
+      "line": 56,
+      "kind": "interface",
+      "exported": true
+    }
+  ],
+  "IndexResult": [
+    {
+      "file": "src/types.ts",
+      "line": 62,
+      "kind": "interface",
+      "exported": true
+    }
+  ],
+  "DiscoveredFile": [
+    {
+      "file": "src/types.ts",
+      "line": 75,
+      "kind": "interface",
+      "exported": true
+    }
+  ],
+  "Check": [
+    {
+      "file": "src/commands/doctor.ts",
+      "line": 8,
+      "kind": "interface",
+      "exported": false
+    }
+  ],
+  "runDoctor": [
+    {
+      "file": "src/commands/doctor.ts",
+      "line": 14,
+      "kind": "function",
+      "exported": true
+    }
+  ],
+  "runFolderChecks": [
+    {
+      "file": "src/commands/doctor.ts",
+      "line": 43,
+      "kind": "function",
+      "exported": false
+    }
+  ],
+  "runIntegrationChecks": [
+    {
+      "file": "src/commands/doctor.ts",
+      "line": 92,
+      "kind": "function",
+      "exported": false
+    }
+  ],
+  "checkBlockedFile": [
+    {
+      "file": "src/commands/doctor.ts",
+      "line": 101,
+      "kind": "function",
+      "exported": false
+    }
+  ],
+  "checkCursor": [
+    {
+      "file": "src/commands/doctor.ts",
+      "line": 121,
+      "kind": "function",
+      "exported": false
+    }
+  ],
+  "runFreshnessCheck": [
+    {
+      "file": "src/commands/doctor.ts",
+      "line": 141,
+      "kind": "function",
+      "exported": false
+    }
+  ],
+  "printCheck": [
+    {
+      "file": "src/commands/doctor.ts",
+      "line": 190,
+      "kind": "function",
+      "exported": false
+    }
+  ],
+  "BEGIN": [
+    {
+      "file": "src/commands/handshake.ts",
+      "line": 6,
+      "kind": "const",
+      "exported": false
+    }
+  ],
+  "END": [
+    {
+      "file": "src/commands/handshake.ts",
+      "line": 7,
+      "kind": "const",
+      "exported": false
+    }
+  ],
+  "WORDS_A": [
+    {
+      "file": "src/commands/handshake.ts",
+      "line": 9,
+      "kind": "const",
+      "exported": false
+    }
+  ],
+  "WORDS_B": [
+    {
+      "file": "src/commands/handshake.ts",
+      "line": 13,
+      "kind": "const",
+      "exported": false
+    }
+  ],
+  "HandshakeOptions": [
+    {
+      "file": "src/commands/handshake.ts",
+      "line": 18,
+      "kind": "interface",
+      "exported": true
+    }
+  ],
+  "runHandshake": [
+    {
+      "file": "src/commands/handshake.ts",
+      "line": 24,
+      "kind": "function",
+      "exported": true
+    }
+  ],
+  "printInstructions": [
+    {
+      "file": "src/commands/handshake.ts",
+      "line": 77,
+      "kind": "function",
+      "exported": false
+    }
+  ],
+  "generatePhrase": [
+    {
+      "file": "src/commands/handshake.ts",
+      "line": 106,
+      "kind": "function",
+      "exported": false
+    }
+  ],
+  "pick": [
+    {
+      "file": "src/commands/handshake.ts",
+      "line": 113,
+      "kind": "function",
+      "exported": false
+    }
+  ],
+  "escapeRegex": [
+    {
+      "file": "src/commands/handshake.ts",
+      "line": 117,
+      "kind": "function",
+      "exported": false
+    },
+    {
+      "file": "src/integrations/common.ts",
+      "line": 46,
+      "kind": "function",
+      "exported": false
+    }
+  ],
+  "InitOptions": [
+    {
+      "file": "src/commands/init.ts",
+      "line": 7,
+      "kind": "interface",
+      "exported": true
+    }
+  ],
+  "runInit": [
+    {
+      "file": "src/commands/init.ts",
+      "line": 17,
+      "kind": "function",
+      "exported": true
+    }
+  ],
+  "TOOL_NAME": [
+    {
+      "file": "src/commands/scan.ts",
+      "line": 10,
+      "kind": "const",
+      "exported": true
+    }
+  ],
+  "runIndex": [
+    {
+      "file": "src/commands/scan.ts",
+      "line": 12,
+      "kind": "function",
+      "exported": true
+    }
+  ],
+  "SkillOptions": [
+    {
+      "file": "src/commands/skill.ts",
+      "line": 6,
+      "kind": "interface",
+      "exported": true
+    }
+  ],
+  "SkillResult": [
+    {
+      "file": "src/commands/skill.ts",
+      "line": 12,
+      "kind": "interface",
+      "exported": false
+    }
+  ],
+  "runSkill": [
+    {
+      "file": "src/commands/skill.ts",
+      "line": 17,
+      "kind": "function",
+      "exported": true
+    }
+  ],
+  "installClaudeSkill": [
+    {
+      "file": "src/commands/skill.ts",
+      "line": 65,
+      "kind": "function",
+      "exported": false
+    }
+  ],
+  "uninstallClaudeSkill": [
+    {
+      "file": "src/commands/skill.ts",
+      "line": 87,
+      "kind": "function",
+      "exported": false
+    }
+  ],
+  "installCursorUserRule": [
+    {
+      "file": "src/commands/skill.ts",
+      "line": 98,
+      "kind": "function",
+      "exported": false
+    }
+  ],
+  "uninstallCursorUserRule": [
+    {
+      "file": "src/commands/skill.ts",
+      "line": 120,
+      "kind": "function",
+      "exported": false
+    }
+  ],
+  "renderClaudeSkill": [
+    {
+      "file": "src/commands/skill.ts",
+      "line": 130,
+      "kind": "function",
+      "exported": false
+    }
+  ],
+  "renderCursorUserRule": [
+    {
+      "file": "src/commands/skill.ts",
+      "line": 164,
+      "kind": "function",
+      "exported": false
+    }
+  ],
+  "initialized": [
+    {
+      "file": "src/parse/parser.ts",
+      "line": 4,
+      "kind": "const",
+      "exported": false
+    }
+  ],
+  "languages": [
+    {
+      "file": "src/parse/parser.ts",
+      "line": 5,
+      "kind": "const",
+      "exported": false
+    }
+  ],
+  "parsers": [
+    {
+      "file": "src/parse/parser.ts",
+      "line": 6,
+      "kind": "const",
+      "exported": false
+    }
+  ],
+  "wasmNameFor": [
+    {
+      "file": "src/parse/parser.ts",
+      "line": 8,
+      "kind": "function",
+      "exported": false
+    }
+  ],
+  "resolveWasm": [
+    {
+      "file": "src/parse/parser.ts",
+      "line": 14,
+      "kind": "function",
+      "exported": false
+    }
+  ],
+  "getParser": [
+    {
+      "file": "src/parse/parser.ts",
+      "line": 18,
+      "kind": "function",
+      "exported": true
+    }
+  ],
+  "AgentGuideContext": [
+    {
+      "file": "src/render/agent-guide.ts",
+      "line": 1,
+      "kind": "interface",
+      "exported": true
+    }
+  ],
+  "renderAgentGuide": [
+    {
+      "file": "src/render/agent-guide.ts",
+      "line": 9,
+      "kind": "function",
+      "exported": true
+    }
+  ],
+  "renderArchitecture": [
+    {
+      "file": "src/render/architecture.ts",
+      "line": 3,
+      "kind": "function",
+      "exported": true
+    }
+  ],
+  "renderEntrypoints": [
+    {
+      "file": "src/render/entrypoints.ts",
+      "line": 3,
+      "kind": "function",
+      "exported": true
+    }
+  ],
+  "writeOutput": [
+    {
+      "file": "src/render/write.ts",
+      "line": 8,
+      "kind": "function",
+      "exported": true
+    }
+  ],
+  "TEST_PATH_RE": [
+    {
+      "file": "src/graph/derive.ts",
+      "line": 5,
+      "kind": "const",
+      "exported": false
+    }
+  ],
+  "TEST_FILE_RE": [
+    {
+      "file": "src/graph/derive.ts",
+      "line": 6,
+      "kind": "const",
+      "exported": false
+    }
+  ],
+  "deriveViews": [
+    {
+      "file": "src/graph/derive.ts",
+      "line": 8,
+      "kind": "function",
+      "exported": true
+    }
+  ],
+  "readPackageJson": [
+    {
+      "file": "src/graph/derive.ts",
+      "line": 68,
+      "kind": "function",
+      "exported": false
+    }
+  ],
+  "CANDIDATE_EXT": [
+    {
+      "file": "src/graph/resolve-imports.ts",
+      "line": 4,
+      "kind": "const",
+      "exported": false
+    }
+  ],
+  "buildImportGraph": [
+    {
+      "file": "src/graph/resolve-imports.ts",
+      "line": 6,
+      "kind": "function",
+      "exported": true
+    }
+  ],
+  "resolveLocal": [
+    {
+      "file": "src/graph/resolve-imports.ts",
+      "line": 35,
+      "kind": "function",
+      "exported": false
+    }
+  ],
+  "installClaudeCode": [
+    {
+      "file": "src/integrations/claude-code.ts",
+      "line": 4,
+      "kind": "function",
+      "exported": true
+    }
+  ],
+  "installCodex": [
+    {
+      "file": "src/integrations/codex.ts",
+      "line": 4,
+      "kind": "function",
+      "exported": true
+    }
+  ],
+  "UpsertStatus": [
+    {
+      "file": "src/integrations/common.ts",
+      "line": 4,
+      "kind": "type",
+      "exported": true
+    }
+  ],
+  "beginTag": [
+    {
+      "file": "src/integrations/common.ts",
+      "line": 6,
+      "kind": "const",
+      "exported": true
+    }
+  ],
+  "endTag": [
+    {
+      "file": "src/integrations/common.ts",
+      "line": 7,
+      "kind": "const",
+      "exported": true
+    }
+  ],
+  "upsertBlock": [
+    {
+      "file": "src/integrations/common.ts",
+      "line": 9,
+      "kind": "function",
+      "exported": true
+    }
+  ],
+  "installCopilot": [
+    {
+      "file": "src/integrations/copilot.ts",
+      "line": 4,
+      "kind": "function",
+      "exported": true
+    }
+  ],
+  "installCursor": [
+    {
+      "file": "src/integrations/cursor.ts",
+      "line": 5,
+      "kind": "function",
+      "exported": true
+    }
+  ],
+  "extractTypescript": [
+    {
+      "file": "src/parse/extractors/typescript.ts",
+      "line": 5,
+      "kind": "function",
+      "exported": true
+    }
+  ],
+  "walk": [
+    {
+      "file": "src/parse/extractors/typescript.ts",
+      "line": 88,
+      "kind": "function",
+      "exported": false
+    }
+  ],
+  "mkSymbol": [
+    {
+      "file": "src/parse/extractors/typescript.ts",
+      "line": 94,
+      "kind": "function",
+      "exported": false
+    }
+  ],
+  "isExportedStmt": [
+    {
+      "file": "src/parse/extractors/typescript.ts",
+      "line": 112,
+      "kind": "function",
+      "exported": false
+    }
+  ],
+  "isTopLevelDecl": [
+    {
+      "file": "src/parse/extractors/typescript.ts",
+      "line": 116,
+      "kind": "function",
+      "exported": false
+    }
+  ],
+  "parseImport": [
+    {
+      "file": "src/parse/extractors/typescript.ts",
+      "line": 124,
+      "kind": "function",
+      "exported": false
+    }
+  ]
+}

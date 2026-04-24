@@ -1,0 +1,1822 @@
+{
+  "version": 1,
+  "generated_at": "2026-04-24T19:07:26.799Z",
+  "stats": {
+    "files": 23,
+    "symbols": 80,
+    "imports": 68,
+    "durationMs": 1400
+  },
+  "files": {
+    "README.md": {
+      "path": "README.md",
+      "lang": "md",
+      "loc": 71,
+      "hash": "31048cd09af4d192f56702daa9faef40fb605a252eb58b1075887be5d32ae827",
+      "symbols": [],
+      "imports": [],
+      "title": "repocards",
+      "summary": "**Markdown-first codebase context for AI coding assistants.**"
+    },
+    "src/cli.ts": {
+      "path": "src/cli.ts",
+      "lang": "ts",
+      "loc": 96,
+      "hash": "e7369d6ad531e28527d3cdc7112d3973022dd2dbb4b48675b65099dbbadd9886",
+      "symbols": [
+        {
+          "id": "src/cli.ts#const:program:9",
+          "name": "program",
+          "kind": "const",
+          "file": "src/cli.ts",
+          "line": 9,
+          "col": 7,
+          "exported": false
+        },
+        {
+          "id": "src/cli.ts#const:skill:37",
+          "name": "skill",
+          "kind": "const",
+          "file": "src/cli.ts",
+          "line": 37,
+          "col": 7,
+          "exported": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "src/cli.ts",
+          "source": "commander",
+          "names": [
+            "Command"
+          ],
+          "line": 2
+        },
+        {
+          "from": "src/cli.ts",
+          "source": "./commands/doctor",
+          "names": [
+            "runDoctor"
+          ],
+          "line": 3,
+          "resolved": "src/commands/doctor.ts"
+        },
+        {
+          "from": "src/cli.ts",
+          "source": "./commands/handshake",
+          "names": [
+            "runHandshake"
+          ],
+          "line": 4,
+          "resolved": "src/commands/handshake.ts"
+        },
+        {
+          "from": "src/cli.ts",
+          "source": "./commands/init",
+          "names": [
+            "runInit"
+          ],
+          "line": 5,
+          "resolved": "src/commands/init.ts"
+        },
+        {
+          "from": "src/cli.ts",
+          "source": "./commands/scan",
+          "names": [
+            "runIndex"
+          ],
+          "line": 6,
+          "resolved": "src/commands/scan.ts"
+        },
+        {
+          "from": "src/cli.ts",
+          "source": "./commands/skill",
+          "names": [
+            "runSkill"
+          ],
+          "line": 7,
+          "resolved": "src/commands/skill.ts"
+        }
+      ]
+    },
+    "src/discover.ts": {
+      "path": "src/discover.ts",
+      "lang": "ts",
+      "loc": 85,
+      "hash": "3e2d7de19139e223db1c88ae53df27178c3fd2397c5ab4da8897d8d595204115",
+      "symbols": [
+        {
+          "id": "src/discover.ts#const:LANG_BY_EXT:7",
+          "name": "LANG_BY_EXT",
+          "kind": "const",
+          "file": "src/discover.ts",
+          "line": 7,
+          "col": 7,
+          "exported": false
+        },
+        {
+          "id": "src/discover.ts#const:BASE_IGNORES:20",
+          "name": "BASE_IGNORES",
+          "kind": "const",
+          "file": "src/discover.ts",
+          "line": 20,
+          "col": 7,
+          "exported": false
+        },
+        {
+          "id": "src/discover.ts#function:discoverFiles:43",
+          "name": "discoverFiles",
+          "kind": "function",
+          "file": "src/discover.ts",
+          "line": 43,
+          "col": 8,
+          "exported": true
+        }
+      ],
+      "imports": [
+        {
+          "from": "src/discover.ts",
+          "source": "fast-glob",
+          "names": [
+            "fg"
+          ],
+          "line": 1
+        },
+        {
+          "from": "src/discover.ts",
+          "source": "ignore",
+          "names": [
+            "ignore"
+          ],
+          "line": 2
+        },
+        {
+          "from": "src/discover.ts",
+          "source": "fs",
+          "names": [
+            "promises"
+          ],
+          "line": 3
+        },
+        {
+          "from": "src/discover.ts",
+          "source": "path",
+          "names": [
+            "*"
+          ],
+          "line": 4
+        },
+        {
+          "from": "src/discover.ts",
+          "source": "./types",
+          "names": [
+            "DiscoveredFile",
+            "Lang"
+          ],
+          "line": 5,
+          "resolved": "src/types.ts"
+        }
+      ]
+    },
+    "src/installer.ts": {
+      "path": "src/installer.ts",
+      "lang": "ts",
+      "loc": 26,
+      "hash": "b80f490d27381872a84e6a87e6bc9b3a8b45fdddb55d05426af7bef9bd0c9897",
+      "symbols": [
+        {
+          "id": "src/installer.ts#function:main:4",
+          "name": "main",
+          "kind": "function",
+          "file": "src/installer.ts",
+          "line": 4,
+          "col": 1,
+          "exported": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "src/installer.ts",
+          "source": "./commands/init",
+          "names": [
+            "runInit"
+          ],
+          "line": 2,
+          "resolved": "src/commands/init.ts"
+        }
+      ]
+    },
+    "src/types.ts": {
+      "path": "src/types.ts",
+      "lang": "ts",
+      "loc": 80,
+      "hash": "114bc2c3ebdd5f3780b7ac4f83683c08aee88b16c717199e7ee1e0cdbcda7363",
+      "symbols": [
+        {
+          "id": "src/types.ts#type:Lang:1",
+          "name": "Lang",
+          "kind": "type",
+          "file": "src/types.ts",
+          "line": 1,
+          "col": 8,
+          "exported": true
+        },
+        {
+          "id": "src/types.ts#type:SymbolKind:3",
+          "name": "SymbolKind",
+          "kind": "type",
+          "file": "src/types.ts",
+          "line": 3,
+          "col": 8,
+          "exported": true
+        },
+        {
+          "id": "src/types.ts#interface:CkSymbol:12",
+          "name": "CkSymbol",
+          "kind": "interface",
+          "file": "src/types.ts",
+          "line": 12,
+          "col": 8,
+          "exported": true
+        },
+        {
+          "id": "src/types.ts#interface:ImportEdge:23",
+          "name": "ImportEdge",
+          "kind": "interface",
+          "file": "src/types.ts",
+          "line": 23,
+          "col": 8,
+          "exported": true
+        },
+        {
+          "id": "src/types.ts#interface:FileNode:31",
+          "name": "FileNode",
+          "kind": "interface",
+          "file": "src/types.ts",
+          "line": 31,
+          "col": 8,
+          "exported": true
+        },
+        {
+          "id": "src/types.ts#interface:Graph:42",
+          "name": "Graph",
+          "kind": "interface",
+          "file": "src/types.ts",
+          "line": 42,
+          "col": 8,
+          "exported": true
+        },
+        {
+          "id": "src/types.ts#interface:PackageMeta:48",
+          "name": "PackageMeta",
+          "kind": "interface",
+          "file": "src/types.ts",
+          "line": 48,
+          "col": 8,
+          "exported": true
+        },
+        {
+          "id": "src/types.ts#interface:DerivedViews:56",
+          "name": "DerivedViews",
+          "kind": "interface",
+          "file": "src/types.ts",
+          "line": 56,
+          "col": 8,
+          "exported": true
+        },
+        {
+          "id": "src/types.ts#interface:IndexResult:62",
+          "name": "IndexResult",
+          "kind": "interface",
+          "file": "src/types.ts",
+          "line": 62,
+          "col": 8,
+          "exported": true
+        },
+        {
+          "id": "src/types.ts#interface:DiscoveredFile:75",
+          "name": "DiscoveredFile",
+          "kind": "interface",
+          "file": "src/types.ts",
+          "line": 75,
+          "col": 8,
+          "exported": true
+        }
+      ],
+      "imports": []
+    },
+    "src/commands/doctor.ts": {
+      "path": "src/commands/doctor.ts",
+      "lang": "ts",
+      "loc": 195,
+      "hash": "fcf9b256a14227f850c46b8c00b627ed9e5b252ed72b1d054eeef111c7672d55",
+      "symbols": [
+        {
+          "id": "src/commands/doctor.ts#interface:Check:8",
+          "name": "Check",
+          "kind": "interface",
+          "file": "src/commands/doctor.ts",
+          "line": 8,
+          "col": 1,
+          "exported": false
+        },
+        {
+          "id": "src/commands/doctor.ts#function:runDoctor:14",
+          "name": "runDoctor",
+          "kind": "function",
+          "file": "src/commands/doctor.ts",
+          "line": 14,
+          "col": 8,
+          "exported": true
+        },
+        {
+          "id": "src/commands/doctor.ts#function:runFolderChecks:43",
+          "name": "runFolderChecks",
+          "kind": "function",
+          "file": "src/commands/doctor.ts",
+          "line": 43,
+          "col": 1,
+          "exported": false
+        },
+        {
+          "id": "src/commands/doctor.ts#function:runIntegrationChecks:92",
+          "name": "runIntegrationChecks",
+          "kind": "function",
+          "file": "src/commands/doctor.ts",
+          "line": 92,
+          "col": 1,
+          "exported": false
+        },
+        {
+          "id": "src/commands/doctor.ts#function:checkBlockedFile:101",
+          "name": "checkBlockedFile",
+          "kind": "function",
+          "file": "src/commands/doctor.ts",
+          "line": 101,
+          "col": 1,
+          "exported": false
+        },
+        {
+          "id": "src/commands/doctor.ts#function:checkCursor:121",
+          "name": "checkCursor",
+          "kind": "function",
+          "file": "src/commands/doctor.ts",
+          "line": 121,
+          "col": 1,
+          "exported": false
+        },
+        {
+          "id": "src/commands/doctor.ts#function:runFreshnessCheck:141",
+          "name": "runFreshnessCheck",
+          "kind": "function",
+          "file": "src/commands/doctor.ts",
+          "line": 141,
+          "col": 1,
+          "exported": false
+        },
+        {
+          "id": "src/commands/doctor.ts#function:printCheck:190",
+          "name": "printCheck",
+          "kind": "function",
+          "file": "src/commands/doctor.ts",
+          "line": 190,
+          "col": 1,
+          "exported": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "src/commands/doctor.ts",
+          "source": "crypto",
+          "names": [
+            "*"
+          ],
+          "line": 1
+        },
+        {
+          "from": "src/commands/doctor.ts",
+          "source": "fs",
+          "names": [
+            "promises"
+          ],
+          "line": 2
+        },
+        {
+          "from": "src/commands/doctor.ts",
+          "source": "path",
+          "names": [
+            "*"
+          ],
+          "line": 3
+        },
+        {
+          "from": "src/commands/doctor.ts",
+          "source": "../discover",
+          "names": [
+            "discoverFiles"
+          ],
+          "line": 4,
+          "resolved": "src/discover.ts"
+        },
+        {
+          "from": "src/commands/doctor.ts",
+          "source": "../integrations/common",
+          "names": [
+            "beginTag",
+            "endTag"
+          ],
+          "line": 5,
+          "resolved": "src/integrations/common.ts"
+        },
+        {
+          "from": "src/commands/doctor.ts",
+          "source": "./scan",
+          "names": [
+            "TOOL_NAME"
+          ],
+          "line": 6,
+          "resolved": "src/commands/scan.ts"
+        }
+      ]
+    },
+    "src/commands/handshake.ts": {
+      "path": "src/commands/handshake.ts",
+      "lang": "ts",
+      "loc": 120,
+      "hash": "bb48e032c8adc4e19e581f3d26ea03b4fbe690a7c6d8ed0a27e0be54967e43a9",
+      "symbols": [
+        {
+          "id": "src/commands/handshake.ts#const:BEGIN:6",
+          "name": "BEGIN",
+          "kind": "const",
+          "file": "src/commands/handshake.ts",
+          "line": 6,
+          "col": 7,
+          "exported": false
+        },
+        {
+          "id": "src/commands/handshake.ts#const:END:7",
+          "name": "END",
+          "kind": "const",
+          "file": "src/commands/handshake.ts",
+          "line": 7,
+          "col": 7,
+          "exported": false
+        },
+        {
+          "id": "src/commands/handshake.ts#const:WORDS_A:9",
+          "name": "WORDS_A",
+          "kind": "const",
+          "file": "src/commands/handshake.ts",
+          "line": 9,
+          "col": 7,
+          "exported": false
+        },
+        {
+          "id": "src/commands/handshake.ts#const:WORDS_B:13",
+          "name": "WORDS_B",
+          "kind": "const",
+          "file": "src/commands/handshake.ts",
+          "line": 13,
+          "col": 7,
+          "exported": false
+        },
+        {
+          "id": "src/commands/handshake.ts#interface:HandshakeOptions:18",
+          "name": "HandshakeOptions",
+          "kind": "interface",
+          "file": "src/commands/handshake.ts",
+          "line": 18,
+          "col": 8,
+          "exported": true
+        },
+        {
+          "id": "src/commands/handshake.ts#function:runHandshake:24",
+          "name": "runHandshake",
+          "kind": "function",
+          "file": "src/commands/handshake.ts",
+          "line": 24,
+          "col": 8,
+          "exported": true
+        },
+        {
+          "id": "src/commands/handshake.ts#function:printInstructions:77",
+          "name": "printInstructions",
+          "kind": "function",
+          "file": "src/commands/handshake.ts",
+          "line": 77,
+          "col": 1,
+          "exported": false
+        },
+        {
+          "id": "src/commands/handshake.ts#function:generatePhrase:106",
+          "name": "generatePhrase",
+          "kind": "function",
+          "file": "src/commands/handshake.ts",
+          "line": 106,
+          "col": 1,
+          "exported": false
+        },
+        {
+          "id": "src/commands/handshake.ts#function:pick:113",
+          "name": "pick",
+          "kind": "function",
+          "file": "src/commands/handshake.ts",
+          "line": 113,
+          "col": 1,
+          "exported": false
+        },
+        {
+          "id": "src/commands/handshake.ts#function:escapeRegex:117",
+          "name": "escapeRegex",
+          "kind": "function",
+          "file": "src/commands/handshake.ts",
+          "line": 117,
+          "col": 1,
+          "exported": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "src/commands/handshake.ts",
+          "source": "crypto",
+          "names": [
+            "*"
+          ],
+          "line": 1
+        },
+        {
+          "from": "src/commands/handshake.ts",
+          "source": "fs",
+          "names": [
+            "promises"
+          ],
+          "line": 2
+        },
+        {
+          "from": "src/commands/handshake.ts",
+          "source": "path",
+          "names": [
+            "*"
+          ],
+          "line": 3
+        },
+        {
+          "from": "src/commands/handshake.ts",
+          "source": "./scan",
+          "names": [
+            "TOOL_NAME"
+          ],
+          "line": 4,
+          "resolved": "src/commands/scan.ts"
+        }
+      ]
+    },
+    "src/commands/init.ts": {
+      "path": "src/commands/init.ts",
+      "lang": "ts",
+      "loc": 35,
+      "hash": "36cb01ec58812b778edab69be9466d4bafb8b13fc7d7e28a990c529f5e1c2593",
+      "symbols": [
+        {
+          "id": "src/commands/init.ts#interface:InitOptions:7",
+          "name": "InitOptions",
+          "kind": "interface",
+          "file": "src/commands/init.ts",
+          "line": 7,
+          "col": 8,
+          "exported": true
+        },
+        {
+          "id": "src/commands/init.ts#function:runInit:17",
+          "name": "runInit",
+          "kind": "function",
+          "file": "src/commands/init.ts",
+          "line": 17,
+          "col": 8,
+          "exported": true
+        }
+      ],
+      "imports": [
+        {
+          "from": "src/commands/init.ts",
+          "source": "../integrations/claude-code",
+          "names": [
+            "installClaudeCode"
+          ],
+          "line": 1,
+          "resolved": "src/integrations/claude-code.ts"
+        },
+        {
+          "from": "src/commands/init.ts",
+          "source": "../integrations/codex",
+          "names": [
+            "installCodex"
+          ],
+          "line": 2,
+          "resolved": "src/integrations/codex.ts"
+        },
+        {
+          "from": "src/commands/init.ts",
+          "source": "../integrations/copilot",
+          "names": [
+            "installCopilot"
+          ],
+          "line": 3,
+          "resolved": "src/integrations/copilot.ts"
+        },
+        {
+          "from": "src/commands/init.ts",
+          "source": "../integrations/cursor",
+          "names": [
+            "installCursor"
+          ],
+          "line": 4,
+          "resolved": "src/integrations/cursor.ts"
+        },
+        {
+          "from": "src/commands/init.ts",
+          "source": "./scan",
+          "names": [
+            "runIndex",
+            "TOOL_NAME"
+          ],
+          "line": 5,
+          "resolved": "src/commands/scan.ts"
+        }
+      ]
+    },
+    "src/commands/scan.ts": {
+      "path": "src/commands/scan.ts",
+      "lang": "ts",
+      "loc": 80,
+      "hash": "cb97fe10495094a707e61a1d8d70932086fc9b25227e152c85805dd9cb01e0fc",
+      "symbols": [
+        {
+          "id": "src/commands/scan.ts#const:TOOL_NAME:10",
+          "name": "TOOL_NAME",
+          "kind": "const",
+          "file": "src/commands/scan.ts",
+          "line": 10,
+          "col": 14,
+          "exported": true
+        },
+        {
+          "id": "src/commands/scan.ts#function:runIndex:12",
+          "name": "runIndex",
+          "kind": "function",
+          "file": "src/commands/scan.ts",
+          "line": 12,
+          "col": 8,
+          "exported": true
+        }
+      ],
+      "imports": [
+        {
+          "from": "src/commands/scan.ts",
+          "source": "crypto",
+          "names": [
+            "*"
+          ],
+          "line": 1
+        },
+        {
+          "from": "src/commands/scan.ts",
+          "source": "fs",
+          "names": [
+            "promises"
+          ],
+          "line": 2
+        },
+        {
+          "from": "src/commands/scan.ts",
+          "source": "../discover",
+          "names": [
+            "discoverFiles"
+          ],
+          "line": 3,
+          "resolved": "src/discover.ts"
+        },
+        {
+          "from": "src/commands/scan.ts",
+          "source": "../graph/derive",
+          "names": [
+            "deriveViews"
+          ],
+          "line": 4,
+          "resolved": "src/graph/derive.ts"
+        },
+        {
+          "from": "src/commands/scan.ts",
+          "source": "../graph/resolve-imports",
+          "names": [
+            "buildImportGraph"
+          ],
+          "line": 5,
+          "resolved": "src/graph/resolve-imports.ts"
+        },
+        {
+          "from": "src/commands/scan.ts",
+          "source": "../parse/extractors/typescript",
+          "names": [
+            "extractTypescript"
+          ],
+          "line": 6,
+          "resolved": "src/parse/extractors/typescript.ts"
+        },
+        {
+          "from": "src/commands/scan.ts",
+          "source": "../render/write",
+          "names": [
+            "writeOutput"
+          ],
+          "line": 7,
+          "resolved": "src/render/write.ts"
+        },
+        {
+          "from": "src/commands/scan.ts",
+          "source": "../types",
+          "names": [
+            "FileNode",
+            "IndexResult"
+          ],
+          "line": 8,
+          "resolved": "src/types.ts"
+        }
+      ]
+    },
+    "src/commands/skill.ts": {
+      "path": "src/commands/skill.ts",
+      "lang": "ts",
+      "loc": 179,
+      "hash": "88b5dc57715b3401085ab41a20f05a933724716a663e305e374bdb788460f4f5",
+      "symbols": [
+        {
+          "id": "src/commands/skill.ts#interface:SkillOptions:6",
+          "name": "SkillOptions",
+          "kind": "interface",
+          "file": "src/commands/skill.ts",
+          "line": 6,
+          "col": 8,
+          "exported": true
+        },
+        {
+          "id": "src/commands/skill.ts#interface:SkillResult:12",
+          "name": "SkillResult",
+          "kind": "interface",
+          "file": "src/commands/skill.ts",
+          "line": 12,
+          "col": 1,
+          "exported": false
+        },
+        {
+          "id": "src/commands/skill.ts#function:runSkill:17",
+          "name": "runSkill",
+          "kind": "function",
+          "file": "src/commands/skill.ts",
+          "line": 17,
+          "col": 8,
+          "exported": true
+        },
+        {
+          "id": "src/commands/skill.ts#function:installClaudeSkill:65",
+          "name": "installClaudeSkill",
+          "kind": "function",
+          "file": "src/commands/skill.ts",
+          "line": 65,
+          "col": 1,
+          "exported": false
+        },
+        {
+          "id": "src/commands/skill.ts#function:uninstallClaudeSkill:87",
+          "name": "uninstallClaudeSkill",
+          "kind": "function",
+          "file": "src/commands/skill.ts",
+          "line": 87,
+          "col": 1,
+          "exported": false
+        },
+        {
+          "id": "src/commands/skill.ts#function:installCursorUserRule:98",
+          "name": "installCursorUserRule",
+          "kind": "function",
+          "file": "src/commands/skill.ts",
+          "line": 98,
+          "col": 1,
+          "exported": false
+        },
+        {
+          "id": "src/commands/skill.ts#function:uninstallCursorUserRule:120",
+          "name": "uninstallCursorUserRule",
+          "kind": "function",
+          "file": "src/commands/skill.ts",
+          "line": 120,
+          "col": 1,
+          "exported": false
+        },
+        {
+          "id": "src/commands/skill.ts#function:renderClaudeSkill:130",
+          "name": "renderClaudeSkill",
+          "kind": "function",
+          "file": "src/commands/skill.ts",
+          "line": 130,
+          "col": 1,
+          "exported": false
+        },
+        {
+          "id": "src/commands/skill.ts#function:renderCursorUserRule:164",
+          "name": "renderCursorUserRule",
+          "kind": "function",
+          "file": "src/commands/skill.ts",
+          "line": 164,
+          "col": 1,
+          "exported": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "src/commands/skill.ts",
+          "source": "fs",
+          "names": [
+            "promises"
+          ],
+          "line": 1
+        },
+        {
+          "from": "src/commands/skill.ts",
+          "source": "os",
+          "names": [
+            "*"
+          ],
+          "line": 2
+        },
+        {
+          "from": "src/commands/skill.ts",
+          "source": "path",
+          "names": [
+            "*"
+          ],
+          "line": 3
+        },
+        {
+          "from": "src/commands/skill.ts",
+          "source": "./scan",
+          "names": [
+            "TOOL_NAME"
+          ],
+          "line": 4,
+          "resolved": "src/commands/scan.ts"
+        }
+      ]
+    },
+    "src/parse/parser.ts": {
+      "path": "src/parse/parser.ts",
+      "lang": "ts",
+      "loc": 34,
+      "hash": "aacb1b52f322c43e98f94fed4144b27c2cc71e6adc6d2f75afb3f11bd5ef40c5",
+      "symbols": [
+        {
+          "id": "src/parse/parser.ts#const:initialized:4",
+          "name": "initialized",
+          "kind": "const",
+          "file": "src/parse/parser.ts",
+          "line": 4,
+          "col": 5,
+          "exported": false
+        },
+        {
+          "id": "src/parse/parser.ts#const:languages:5",
+          "name": "languages",
+          "kind": "const",
+          "file": "src/parse/parser.ts",
+          "line": 5,
+          "col": 7,
+          "exported": false
+        },
+        {
+          "id": "src/parse/parser.ts#const:parsers:6",
+          "name": "parsers",
+          "kind": "const",
+          "file": "src/parse/parser.ts",
+          "line": 6,
+          "col": 7,
+          "exported": false
+        },
+        {
+          "id": "src/parse/parser.ts#function:wasmNameFor:8",
+          "name": "wasmNameFor",
+          "kind": "function",
+          "file": "src/parse/parser.ts",
+          "line": 8,
+          "col": 1,
+          "exported": false
+        },
+        {
+          "id": "src/parse/parser.ts#function:resolveWasm:14",
+          "name": "resolveWasm",
+          "kind": "function",
+          "file": "src/parse/parser.ts",
+          "line": 14,
+          "col": 1,
+          "exported": false
+        },
+        {
+          "id": "src/parse/parser.ts#function:getParser:18",
+          "name": "getParser",
+          "kind": "function",
+          "file": "src/parse/parser.ts",
+          "line": 18,
+          "col": 8,
+          "exported": true
+        }
+      ],
+      "imports": [
+        {
+          "from": "src/parse/parser.ts",
+          "source": "web-tree-sitter",
+          "names": [
+            "Parser"
+          ],
+          "line": 1
+        },
+        {
+          "from": "src/parse/parser.ts",
+          "source": "../types",
+          "names": [
+            "Lang"
+          ],
+          "line": 2,
+          "resolved": "src/types.ts"
+        }
+      ]
+    },
+    "src/render/agent-guide.ts": {
+      "path": "src/render/agent-guide.ts",
+      "lang": "ts",
+      "loc": 52,
+      "hash": "ab4d1e1ba026c77302397af376cda96c51f8a773243a6b8d2233112fac251010",
+      "symbols": [
+        {
+          "id": "src/render/agent-guide.ts#interface:AgentGuideContext:1",
+          "name": "AgentGuideContext",
+          "kind": "interface",
+          "file": "src/render/agent-guide.ts",
+          "line": 1,
+          "col": 8,
+          "exported": true
+        },
+        {
+          "id": "src/render/agent-guide.ts#function:renderAgentGuide:9",
+          "name": "renderAgentGuide",
+          "kind": "function",
+          "file": "src/render/agent-guide.ts",
+          "line": 9,
+          "col": 8,
+          "exported": true
+        }
+      ],
+      "imports": []
+    },
+    "src/render/architecture.ts": {
+      "path": "src/render/architecture.ts",
+      "lang": "ts",
+      "loc": 77,
+      "hash": "3d5ebf76e2939694c9ee297e63d0b960b799a739e40f38595bc74cea8ee2bcae",
+      "symbols": [
+        {
+          "id": "src/render/architecture.ts#function:renderArchitecture:3",
+          "name": "renderArchitecture",
+          "kind": "function",
+          "file": "src/render/architecture.ts",
+          "line": 3,
+          "col": 8,
+          "exported": true
+        }
+      ],
+      "imports": [
+        {
+          "from": "src/render/architecture.ts",
+          "source": "../types",
+          "names": [
+            "IndexResult"
+          ],
+          "line": 1,
+          "resolved": "src/types.ts"
+        }
+      ]
+    },
+    "src/render/entrypoints.ts": {
+      "path": "src/render/entrypoints.ts",
+      "lang": "ts",
+      "loc": 70,
+      "hash": "d46754d206f43050c95044bd5506967b2a86e49b6695a729caa322b77053aaac",
+      "symbols": [
+        {
+          "id": "src/render/entrypoints.ts#function:renderEntrypoints:3",
+          "name": "renderEntrypoints",
+          "kind": "function",
+          "file": "src/render/entrypoints.ts",
+          "line": 3,
+          "col": 8,
+          "exported": true
+        }
+      ],
+      "imports": [
+        {
+          "from": "src/render/entrypoints.ts",
+          "source": "../types",
+          "names": [
+            "IndexResult"
+          ],
+          "line": 1,
+          "resolved": "src/types.ts"
+        }
+      ]
+    },
+    "src/render/write.ts": {
+      "path": "src/render/write.ts",
+      "lang": "ts",
+      "loc": 63,
+      "hash": "ab31b74e86a76c17542f121e05b616bb1ae420505e229462ce52986c3611b899",
+      "symbols": [
+        {
+          "id": "src/render/write.ts#function:writeOutput:8",
+          "name": "writeOutput",
+          "kind": "function",
+          "file": "src/render/write.ts",
+          "line": 8,
+          "col": 8,
+          "exported": true
+        }
+      ],
+      "imports": [
+        {
+          "from": "src/render/write.ts",
+          "source": "fs",
+          "names": [
+            "promises"
+          ],
+          "line": 1
+        },
+        {
+          "from": "src/render/write.ts",
+          "source": "path",
+          "names": [
+            "*"
+          ],
+          "line": 2
+        },
+        {
+          "from": "src/render/write.ts",
+          "source": "../types",
+          "names": [
+            "IndexResult"
+          ],
+          "line": 3,
+          "resolved": "src/types.ts"
+        },
+        {
+          "from": "src/render/write.ts",
+          "source": "./agent-guide",
+          "names": [
+            "renderAgentGuide"
+          ],
+          "line": 4,
+          "resolved": "src/render/agent-guide.ts"
+        },
+        {
+          "from": "src/render/write.ts",
+          "source": "./architecture",
+          "names": [
+            "renderArchitecture"
+          ],
+          "line": 5,
+          "resolved": "src/render/architecture.ts"
+        },
+        {
+          "from": "src/render/write.ts",
+          "source": "./entrypoints",
+          "names": [
+            "renderEntrypoints"
+          ],
+          "line": 6,
+          "resolved": "src/render/entrypoints.ts"
+        }
+      ]
+    },
+    "src/graph/derive.ts": {
+      "path": "src/graph/derive.ts",
+      "lang": "ts",
+      "loc": 86,
+      "hash": "92231c457f6a1c7a93dcb30416dfc0b4005b06aeba0fba2f07bb5b6788e53826",
+      "symbols": [
+        {
+          "id": "src/graph/derive.ts#const:TEST_PATH_RE:5",
+          "name": "TEST_PATH_RE",
+          "kind": "const",
+          "file": "src/graph/derive.ts",
+          "line": 5,
+          "col": 7,
+          "exported": false
+        },
+        {
+          "id": "src/graph/derive.ts#const:TEST_FILE_RE:6",
+          "name": "TEST_FILE_RE",
+          "kind": "const",
+          "file": "src/graph/derive.ts",
+          "line": 6,
+          "col": 7,
+          "exported": false
+        },
+        {
+          "id": "src/graph/derive.ts#function:deriveViews:8",
+          "name": "deriveViews",
+          "kind": "function",
+          "file": "src/graph/derive.ts",
+          "line": 8,
+          "col": 8,
+          "exported": true
+        },
+        {
+          "id": "src/graph/derive.ts#function:readPackageJson:68",
+          "name": "readPackageJson",
+          "kind": "function",
+          "file": "src/graph/derive.ts",
+          "line": 68,
+          "col": 1,
+          "exported": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "src/graph/derive.ts",
+          "source": "fs",
+          "names": [
+            "promises"
+          ],
+          "line": 1
+        },
+        {
+          "from": "src/graph/derive.ts",
+          "source": "path",
+          "names": [
+            "*"
+          ],
+          "line": 2
+        },
+        {
+          "from": "src/graph/derive.ts",
+          "source": "../types",
+          "names": [
+            "DerivedViews",
+            "Graph",
+            "PackageMeta"
+          ],
+          "line": 3,
+          "resolved": "src/types.ts"
+        }
+      ]
+    },
+    "src/graph/resolve-imports.ts": {
+      "path": "src/graph/resolve-imports.ts",
+      "lang": "ts",
+      "loc": 64,
+      "hash": "3a2b444d8d9e44e41b9415377f95c783de671d2cfbe74d004e04faa6924f1fe3",
+      "symbols": [
+        {
+          "id": "src/graph/resolve-imports.ts#const:CANDIDATE_EXT:4",
+          "name": "CANDIDATE_EXT",
+          "kind": "const",
+          "file": "src/graph/resolve-imports.ts",
+          "line": 4,
+          "col": 7,
+          "exported": false
+        },
+        {
+          "id": "src/graph/resolve-imports.ts#function:buildImportGraph:6",
+          "name": "buildImportGraph",
+          "kind": "function",
+          "file": "src/graph/resolve-imports.ts",
+          "line": 6,
+          "col": 8,
+          "exported": true
+        },
+        {
+          "id": "src/graph/resolve-imports.ts#function:resolveLocal:35",
+          "name": "resolveLocal",
+          "kind": "function",
+          "file": "src/graph/resolve-imports.ts",
+          "line": 35,
+          "col": 1,
+          "exported": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "src/graph/resolve-imports.ts",
+          "source": "path",
+          "names": [
+            "*"
+          ],
+          "line": 1
+        },
+        {
+          "from": "src/graph/resolve-imports.ts",
+          "source": "../types",
+          "names": [
+            "FileNode"
+          ],
+          "line": 2,
+          "resolved": "src/types.ts"
+        }
+      ]
+    },
+    "src/integrations/claude-code.ts": {
+      "path": "src/integrations/claude-code.ts",
+      "lang": "ts",
+      "loc": 16,
+      "hash": "6c2dce2127d459355f053dc05645b54e83ef28527f55b8302e19d5dafdb0ccc0",
+      "symbols": [
+        {
+          "id": "src/integrations/claude-code.ts#function:installClaudeCode:4",
+          "name": "installClaudeCode",
+          "kind": "function",
+          "file": "src/integrations/claude-code.ts",
+          "line": 4,
+          "col": 8,
+          "exported": true
+        }
+      ],
+      "imports": [
+        {
+          "from": "src/integrations/claude-code.ts",
+          "source": "path",
+          "names": [
+            "*"
+          ],
+          "line": 1
+        },
+        {
+          "from": "src/integrations/claude-code.ts",
+          "source": "./common",
+          "names": [
+            "upsertBlock",
+            "UpsertStatus"
+          ],
+          "line": 2,
+          "resolved": "src/integrations/common.ts"
+        }
+      ]
+    },
+    "src/integrations/codex.ts": {
+      "path": "src/integrations/codex.ts",
+      "lang": "ts",
+      "loc": 16,
+      "hash": "4f4d775b7dff39ec35cca0c3b94d3b77fd1d9037573e31afd7cdb727d46b2c7d",
+      "symbols": [
+        {
+          "id": "src/integrations/codex.ts#function:installCodex:4",
+          "name": "installCodex",
+          "kind": "function",
+          "file": "src/integrations/codex.ts",
+          "line": 4,
+          "col": 8,
+          "exported": true
+        }
+      ],
+      "imports": [
+        {
+          "from": "src/integrations/codex.ts",
+          "source": "path",
+          "names": [
+            "*"
+          ],
+          "line": 1
+        },
+        {
+          "from": "src/integrations/codex.ts",
+          "source": "./common",
+          "names": [
+            "upsertBlock",
+            "UpsertStatus"
+          ],
+          "line": 2,
+          "resolved": "src/integrations/common.ts"
+        }
+      ]
+    },
+    "src/integrations/common.ts": {
+      "path": "src/integrations/common.ts",
+      "lang": "ts",
+      "loc": 49,
+      "hash": "3ebbe8d60442378d1c464a3aa381e2d0e96a429d00210115ee952ac8b836ec06",
+      "symbols": [
+        {
+          "id": "src/integrations/common.ts#type:UpsertStatus:4",
+          "name": "UpsertStatus",
+          "kind": "type",
+          "file": "src/integrations/common.ts",
+          "line": 4,
+          "col": 8,
+          "exported": true
+        },
+        {
+          "id": "src/integrations/common.ts#const:beginTag:6",
+          "name": "beginTag",
+          "kind": "const",
+          "file": "src/integrations/common.ts",
+          "line": 6,
+          "col": 14,
+          "exported": true
+        },
+        {
+          "id": "src/integrations/common.ts#const:endTag:7",
+          "name": "endTag",
+          "kind": "const",
+          "file": "src/integrations/common.ts",
+          "line": 7,
+          "col": 14,
+          "exported": true
+        },
+        {
+          "id": "src/integrations/common.ts#function:upsertBlock:9",
+          "name": "upsertBlock",
+          "kind": "function",
+          "file": "src/integrations/common.ts",
+          "line": 9,
+          "col": 8,
+          "exported": true
+        },
+        {
+          "id": "src/integrations/common.ts#function:escapeRegex:46",
+          "name": "escapeRegex",
+          "kind": "function",
+          "file": "src/integrations/common.ts",
+          "line": 46,
+          "col": 1,
+          "exported": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "src/integrations/common.ts",
+          "source": "fs",
+          "names": [
+            "promises"
+          ],
+          "line": 1
+        },
+        {
+          "from": "src/integrations/common.ts",
+          "source": "path",
+          "names": [
+            "*"
+          ],
+          "line": 2
+        }
+      ]
+    },
+    "src/integrations/copilot.ts": {
+      "path": "src/integrations/copilot.ts",
+      "lang": "ts",
+      "loc": 20,
+      "hash": "550ab2c645faa5d9ab2f21e5006232fc65ebf53636b0df83de093dc75739c7ae",
+      "symbols": [
+        {
+          "id": "src/integrations/copilot.ts#function:installCopilot:4",
+          "name": "installCopilot",
+          "kind": "function",
+          "file": "src/integrations/copilot.ts",
+          "line": 4,
+          "col": 8,
+          "exported": true
+        }
+      ],
+      "imports": [
+        {
+          "from": "src/integrations/copilot.ts",
+          "source": "path",
+          "names": [
+            "*"
+          ],
+          "line": 1
+        },
+        {
+          "from": "src/integrations/copilot.ts",
+          "source": "./common",
+          "names": [
+            "upsertBlock",
+            "UpsertStatus"
+          ],
+          "line": 2,
+          "resolved": "src/integrations/common.ts"
+        }
+      ]
+    },
+    "src/integrations/cursor.ts": {
+      "path": "src/integrations/cursor.ts",
+      "lang": "ts",
+      "loc": 29,
+      "hash": "a2630eab04b0b9cefeb7c83d236c5878358268a022791c52612d03638ef63b12",
+      "symbols": [
+        {
+          "id": "src/integrations/cursor.ts#function:installCursor:5",
+          "name": "installCursor",
+          "kind": "function",
+          "file": "src/integrations/cursor.ts",
+          "line": 5,
+          "col": 8,
+          "exported": true
+        }
+      ],
+      "imports": [
+        {
+          "from": "src/integrations/cursor.ts",
+          "source": "fs",
+          "names": [
+            "promises"
+          ],
+          "line": 1
+        },
+        {
+          "from": "src/integrations/cursor.ts",
+          "source": "path",
+          "names": [
+            "*"
+          ],
+          "line": 2
+        },
+        {
+          "from": "src/integrations/cursor.ts",
+          "source": "./common",
+          "names": [
+            "UpsertStatus"
+          ],
+          "line": 3,
+          "resolved": "src/integrations/common.ts"
+        }
+      ]
+    },
+    "src/parse/extractors/typescript.ts": {
+      "path": "src/parse/extractors/typescript.ts",
+      "lang": "ts",
+      "loc": 154,
+      "hash": "98894cbc5fa04878a5df6eb7e118a25a8c23e18527650044f75f17894257b267",
+      "symbols": [
+        {
+          "id": "src/parse/extractors/typescript.ts#function:extractTypescript:5",
+          "name": "extractTypescript",
+          "kind": "function",
+          "file": "src/parse/extractors/typescript.ts",
+          "line": 5,
+          "col": 8,
+          "exported": true
+        },
+        {
+          "id": "src/parse/extractors/typescript.ts#function:walk:88",
+          "name": "walk",
+          "kind": "function",
+          "file": "src/parse/extractors/typescript.ts",
+          "line": 88,
+          "col": 1,
+          "exported": false
+        },
+        {
+          "id": "src/parse/extractors/typescript.ts#function:mkSymbol:94",
+          "name": "mkSymbol",
+          "kind": "function",
+          "file": "src/parse/extractors/typescript.ts",
+          "line": 94,
+          "col": 1,
+          "exported": false
+        },
+        {
+          "id": "src/parse/extractors/typescript.ts#function:isExportedStmt:112",
+          "name": "isExportedStmt",
+          "kind": "function",
+          "file": "src/parse/extractors/typescript.ts",
+          "line": 112,
+          "col": 1,
+          "exported": false
+        },
+        {
+          "id": "src/parse/extractors/typescript.ts#function:isTopLevelDecl:116",
+          "name": "isTopLevelDecl",
+          "kind": "function",
+          "file": "src/parse/extractors/typescript.ts",
+          "line": 116,
+          "col": 1,
+          "exported": false
+        },
+        {
+          "id": "src/parse/extractors/typescript.ts#function:parseImport:124",
+          "name": "parseImport",
+          "kind": "function",
+          "file": "src/parse/extractors/typescript.ts",
+          "line": 124,
+          "col": 1,
+          "exported": false
+        }
+      ],
+      "imports": [
+        {
+          "from": "src/parse/extractors/typescript.ts",
+          "source": "web-tree-sitter",
+          "names": [
+            "Parser"
+          ],
+          "line": 1
+        },
+        {
+          "from": "src/parse/extractors/typescript.ts",
+          "source": "../../types",
+          "names": [
+            "CkSymbol",
+            "FileNode",
+            "ImportEdge",
+            "SymbolKind",
+            "DiscoveredFile"
+          ],
+          "line": 2,
+          "resolved": "src/types.ts"
+        },
+        {
+          "from": "src/parse/extractors/typescript.ts",
+          "source": "../parser",
+          "names": [
+            "getParser"
+          ],
+          "line": 3,
+          "resolved": "src/parse/parser.ts"
+        }
+      ]
+    }
+  },
+  "imports_in": {
+    "README.md": [],
+    "src/cli.ts": [],
+    "src/discover.ts": [
+      "src/commands/doctor.ts",
+      "src/commands/scan.ts"
+    ],
+    "src/installer.ts": [],
+    "src/types.ts": [
+      "src/discover.ts",
+      "src/commands/scan.ts",
+      "src/parse/parser.ts",
+      "src/render/architecture.ts",
+      "src/render/entrypoints.ts",
+      "src/render/write.ts",
+      "src/graph/derive.ts",
+      "src/graph/resolve-imports.ts",
+      "src/parse/extractors/typescript.ts"
+    ],
+    "src/commands/doctor.ts": [
+      "src/cli.ts"
+    ],
+    "src/commands/handshake.ts": [
+      "src/cli.ts"
+    ],
+    "src/commands/init.ts": [
+      "src/cli.ts",
+      "src/installer.ts"
+    ],
+    "src/commands/scan.ts": [
+      "src/cli.ts",
+      "src/commands/doctor.ts",
+      "src/commands/handshake.ts",
+      "src/commands/init.ts",
+      "src/commands/skill.ts"
+    ],
+    "src/commands/skill.ts": [
+      "src/cli.ts"
+    ],
+    "src/parse/parser.ts": [
+      "src/parse/extractors/typescript.ts"
+    ],
+    "src/render/agent-guide.ts": [
+      "src/render/write.ts"
+    ],
+    "src/render/architecture.ts": [
+      "src/render/write.ts"
+    ],
+    "src/render/entrypoints.ts": [
+      "src/render/write.ts"
+    ],
+    "src/render/write.ts": [
+      "src/commands/scan.ts"
+    ],
+    "src/graph/derive.ts": [
+      "src/commands/scan.ts"
+    ],
+    "src/graph/resolve-imports.ts": [
+      "src/commands/scan.ts"
+    ],
+    "src/integrations/claude-code.ts": [
+      "src/commands/init.ts"
+    ],
+    "src/integrations/codex.ts": [
+      "src/commands/init.ts"
+    ],
+    "src/integrations/common.ts": [
+      "src/commands/doctor.ts",
+      "src/integrations/claude-code.ts",
+      "src/integrations/codex.ts",
+      "src/integrations/copilot.ts",
+      "src/integrations/cursor.ts"
+    ],
+    "src/integrations/copilot.ts": [
+      "src/commands/init.ts"
+    ],
+    "src/integrations/cursor.ts": [
+      "src/commands/init.ts"
+    ],
+    "src/parse/extractors/typescript.ts": [
+      "src/commands/scan.ts"
+    ]
+  },
+  "imports_out": {
+    "README.md": [],
+    "src/cli.ts": [
+      "src/commands/doctor.ts",
+      "src/commands/handshake.ts",
+      "src/commands/init.ts",
+      "src/commands/scan.ts",
+      "src/commands/skill.ts"
+    ],
+    "src/discover.ts": [
+      "src/types.ts"
+    ],
+    "src/installer.ts": [
+      "src/commands/init.ts"
+    ],
+    "src/types.ts": [],
+    "src/commands/doctor.ts": [
+      "src/discover.ts",
+      "src/integrations/common.ts",
+      "src/commands/scan.ts"
+    ],
+    "src/commands/handshake.ts": [
+      "src/commands/scan.ts"
+    ],
+    "src/commands/init.ts": [
+      "src/integrations/claude-code.ts",
+      "src/integrations/codex.ts",
+      "src/integrations/copilot.ts",
+      "src/integrations/cursor.ts",
+      "src/commands/scan.ts"
+    ],
+    "src/commands/scan.ts": [
+      "src/discover.ts",
+      "src/graph/derive.ts",
+      "src/graph/resolve-imports.ts",
+      "src/parse/extractors/typescript.ts",
+      "src/render/write.ts",
+      "src/types.ts"
+    ],
+    "src/commands/skill.ts": [
+      "src/commands/scan.ts"
+    ],
+    "src/parse/parser.ts": [
+      "src/types.ts"
+    ],
+    "src/render/agent-guide.ts": [],
+    "src/render/architecture.ts": [
+      "src/types.ts"
+    ],
+    "src/render/entrypoints.ts": [
+      "src/types.ts"
+    ],
+    "src/render/write.ts": [
+      "src/types.ts",
+      "src/render/agent-guide.ts",
+      "src/render/architecture.ts",
+      "src/render/entrypoints.ts"
+    ],
+    "src/graph/derive.ts": [
+      "src/types.ts"
+    ],
+    "src/graph/resolve-imports.ts": [
+      "src/types.ts"
+    ],
+    "src/integrations/claude-code.ts": [
+      "src/integrations/common.ts"
+    ],
+    "src/integrations/codex.ts": [
+      "src/integrations/common.ts"
+    ],
+    "src/integrations/common.ts": [],
+    "src/integrations/copilot.ts": [
+      "src/integrations/common.ts"
+    ],
+    "src/integrations/cursor.ts": [
+      "src/integrations/common.ts"
+    ],
+    "src/parse/extractors/typescript.ts": [
+      "src/types.ts",
+      "src/parse/parser.ts"
+    ]
+  },
+  "entrypoints": [
+    {
+      "file": "src/cli.ts",
+      "reason": "no-incoming-imports"
+    },
+    {
+      "file": "src/installer.ts",
+      "reason": "no-incoming-imports"
+    }
+  ],
+  "hubs": [
+    {
+      "file": "src/commands/scan.ts",
+      "importedBy": 5,
+      "imports": 6,
+      "degree": 11
+    },
+    {
+      "file": "src/types.ts",
+      "importedBy": 9,
+      "imports": 0,
+      "degree": 9
+    },
+    {
+      "file": "src/commands/init.ts",
+      "importedBy": 2,
+      "imports": 5,
+      "degree": 7
+    },
+    {
+      "file": "src/cli.ts",
+      "importedBy": 0,
+      "imports": 5,
+      "degree": 5
+    },
+    {
+      "file": "src/render/write.ts",
+      "importedBy": 1,
+      "imports": 4,
+      "degree": 5
+    },
+    {
+      "file": "src/integrations/common.ts",
+      "importedBy": 5,
+      "imports": 0,
+      "degree": 5
+    },
+    {
+      "file": "src/commands/doctor.ts",
+      "importedBy": 1,
+      "imports": 3,
+      "degree": 4
+    },
+    {
+      "file": "src/discover.ts",
+      "importedBy": 2,
+      "imports": 1,
+      "degree": 3
+    },
+    {
+      "file": "src/parse/extractors/typescript.ts",
+      "importedBy": 1,
+      "imports": 2,
+      "degree": 3
+    },
+    {
+      "file": "src/commands/handshake.ts",
+      "importedBy": 1,
+      "imports": 1,
+      "degree": 2
+    },
+    {
+      "file": "src/commands/skill.ts",
+      "importedBy": 1,
+      "imports": 1,
+      "degree": 2
+    },
+    {
+      "file": "src/parse/parser.ts",
+      "importedBy": 1,
+      "imports": 1,
+      "degree": 2
+    },
+    {
+      "file": "src/render/architecture.ts",
+      "importedBy": 1,
+      "imports": 1,
+      "degree": 2
+    },
+    {
+      "file": "src/render/entrypoints.ts",
+      "importedBy": 1,
+      "imports": 1,
+      "degree": 2
+    },
+    {
+      "file": "src/graph/derive.ts",
+      "importedBy": 1,
+      "imports": 1,
+      "degree": 2
+    }
+  ]
+}

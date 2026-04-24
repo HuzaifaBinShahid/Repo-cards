@@ -1,0 +1,94 @@
+{
+  "README.md": {
+    "hash": "31048cd09af4d192f56702daa9faef40fb605a252eb58b1075887be5d32ae827",
+    "loc": 71
+  },
+  "src/cli.ts": {
+    "hash": "e7369d6ad531e28527d3cdc7112d3973022dd2dbb4b48675b65099dbbadd9886",
+    "loc": 96
+  },
+  "src/discover.ts": {
+    "hash": "3e2d7de19139e223db1c88ae53df27178c3fd2397c5ab4da8897d8d595204115",
+    "loc": 85
+  },
+  "src/installer.ts": {
+    "hash": "b80f490d27381872a84e6a87e6bc9b3a8b45fdddb55d05426af7bef9bd0c9897",
+    "loc": 26
+  },
+  "src/types.ts": {
+    "hash": "114bc2c3ebdd5f3780b7ac4f83683c08aee88b16c717199e7ee1e0cdbcda7363",
+    "loc": 80
+  },
+  "src/commands/doctor.ts": {
+    "hash": "fcf9b256a14227f850c46b8c00b627ed9e5b252ed72b1d054eeef111c7672d55",
+    "loc": 195
+  },
+  "src/commands/handshake.ts": {
+    "hash": "bb48e032c8adc4e19e581f3d26ea03b4fbe690a7c6d8ed0a27e0be54967e43a9",
+    "loc": 120
+  },
+  "src/commands/init.ts": {
+    "hash": "36cb01ec58812b778edab69be9466d4bafb8b13fc7d7e28a990c529f5e1c2593",
+    "loc": 35
+  },
+  "src/commands/scan.ts": {
+    "hash": "cb97fe10495094a707e61a1d8d70932086fc9b25227e152c85805dd9cb01e0fc",
+    "loc": 80
+  },
+  "src/commands/skill.ts": {
+    "hash": "88b5dc57715b3401085ab41a20f05a933724716a663e305e374bdb788460f4f5",
+    "loc": 179
+  },
+  "src/parse/parser.ts": {
+    "hash": "aacb1b52f322c43e98f94fed4144b27c2cc71e6adc6d2f75afb3f11bd5ef40c5",
+    "loc": 34
+  },
+  "src/render/agent-guide.ts": {
+    "hash": "ab4d1e1ba026c77302397af376cda96c51f8a773243a6b8d2233112fac251010",
+    "loc": 52
+  },
+  "src/render/architecture.ts": {
+    "hash": "3d5ebf76e2939694c9ee297e63d0b960b799a739e40f38595bc74cea8ee2bcae",
+    "loc": 77
+  },
+  "src/render/entrypoints.ts": {
+    "hash": "d46754d206f43050c95044bd5506967b2a86e49b6695a729caa322b77053aaac",
+    "loc": 70
+  },
+  "src/render/write.ts": {
+    "hash": "ab31b74e86a76c17542f121e05b616bb1ae420505e229462ce52986c3611b899",
+    "loc": 63
+  },
+  "src/graph/derive.ts": {
+    "hash": "92231c457f6a1c7a93dcb30416dfc0b4005b06aeba0fba2f07bb5b6788e53826",
+    "loc": 86
+  },
+  "src/graph/resolve-imports.ts": {
+    "hash": "3a2b444d8d9e44e41b9415377f95c783de671d2cfbe74d004e04faa6924f1fe3",
+    "loc": 64
+  },
+  "src/integrations/claude-code.ts": {
+    "hash": "6c2dce2127d459355f053dc05645b54e83ef28527f55b8302e19d5dafdb0ccc0",
+    "loc": 16
+  },
+  "src/integrations/codex.ts": {
+    "hash": "4f4d775b7dff39ec35cca0c3b94d3b77fd1d9037573e31afd7cdb727d46b2c7d",
+    "loc": 16
+  },
+  "src/integrations/common.ts": {
+    "hash": "3ebbe8d60442378d1c464a3aa381e2d0e96a429d00210115ee952ac8b836ec06",
+    "loc": 49
+  },
+  "src/integrations/copilot.ts": {
+    "hash": "550ab2c645faa5d9ab2f21e5006232fc65ebf53636b0df83de093dc75739c7ae",
+    "loc": 20
+  },
+  "src/integrations/cursor.ts": {
+    "hash": "a2630eab04b0b9cefeb7c83d236c5878358268a022791c52612d03638ef63b12",
+    "loc": 29
+  },
+  "src/parse/extractors/typescript.ts": {
+    "hash": "98894cbc5fa04878a5df6eb7e118a25a8c23e18527650044f75f17894257b267",
+    "loc": 154
+  }
+}

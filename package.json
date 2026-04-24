@@ -1,0 +1,49 @@
+{
+  "name": "repocards",
+  "version": "0.1.1",
+  "description": "Markdown-first codebase context for AI coding assistants. Install once, every session reads a folder of pre-computed answers instead of greping the repo.",
+  "keywords": [
+    "ai",
+    "claude",
+    "cursor",
+    "codex",
+    "copilot",
+    "codebase",
+    "context",
+    "tree-sitter",
+    "knowledge-graph",
+    "agent",
+    "mcp"
+  ],
+  "license": "MIT",
+  "bin": {
+    "repocards": "dist/cli.js",
+    "repocards-installer": "dist/installer.js"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/cli.js",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "fast-glob": "^3.3.2",
+    "ignore": "^5.3.2",
+    "tree-sitter-wasms": "^0.1.12",
+    "web-tree-sitter": "0.22.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.4.0"
+  }
+}
